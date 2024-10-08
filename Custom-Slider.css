@@ -1,0 +1,30 @@
+.c-item{
+    height: 500px;
+}
+
+.c-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.carousel-caption p {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* เพิ่มเงาให้ตัวอักษร */
+}
+
+.carousel-caption button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #4f772d; /* สีปุ่ม */
+    border: none;
+    border-radius: 8px;
+}
+
+
+/* Custom CSS Bootstrap ตรงปุ่มเลื่อน */
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    padding: 0;
+}

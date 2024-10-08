@@ -1,0 +1,7 @@
+.card-product-hover{
+    transition: all 0.3s;
+}
+
+.card-product-hover:hover{
+    transform: scale(1.15);
+}
