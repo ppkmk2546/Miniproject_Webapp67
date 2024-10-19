@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Home | Flow Feet</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"> <!--? CSS Bootstrap-->
     <link rel="stylesheet" href="Custom-Slider.css"> <!-- ? CSS Slider-->
     <link rel="stylesheet" href="card_index.css">  <!-- ? CSS Card Hover-->
@@ -21,46 +22,14 @@
 
     <!--? promotion-->
     <header class="container-fluid text-center text-white" style="background-color: #606c38;">
-        <p class="pt-2">Free shipping On Orders Over $75.Free Return <a href="#" class="text-white">Shop Now</a></p>
+        <p class="py-3 mb-0">Free shipping On Orders Over ฿2000.Free Return <a href="collection.php" class="text-white">Shop Now</a></p>
     </header>
 
     <!-- ? Navbar responsive humbuger menu -->
-    <nav class="navbar navbar-expand-sm navbar-light py-3">
-        <!-- ? Content -->
-        <div class="container">
-            <!-- ? Brand -->
-            <a href="#" class="navbar-brand">
-                <img src="https://www.logoai.com/oss/icons/2021/10/27/rA73APprj8wskQ0.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
-                Flow Feet
-            </a>
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggle">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- ? Menu -->
-            <div class="collapse navbar-collapse" id="navbarToggle">
-                <ul class="navbar-nav pe-3 ms-auto">
-                    <li class="nav-item pe-3">
-                        <a href="#" class="nav-link active">Home</a>
-                    </li>
-                    <li class="nav-item pe-3">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item pe-3">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-                    <li class="nav-item pe-3">
-                        <a href="#" class="nav-link">Product</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="login.html" class="btn btn-outline-success shadow-sm me-2" style="width: 120px;">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="sign-up.html" class="btn btn btn-success shadow" style="width: 120px;">Sign-up</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <?php
+        include "nav.php";
+    ?>
+
 
     <!-- ? Slider-->
     <div id="carouselExampleIndicators" class="carousel slide">
@@ -78,7 +47,8 @@
             <div class="carousel-caption">
                 <p class="display-3 fw-bold">Run Stronger, Run Farther</p>
                 <p class="lead">Designed for support and comfort, our shoes help you run longer and injury free.</p>
-                <button class="btn btn-success fw-bold shadow">SHOP NOW</button>
+                <a class="btn btn btn-success fw-bold shadow "style="margin:7px" href="collection.php">SHOP NOW</a><br>
+                
             </div>
           </div>
 
@@ -87,7 +57,7 @@
             <div class="carousel-caption">
                 <p class="display-3 fw-bold">Relax, Walk, Repeat"</p>
                 <p class="lead">Designed for all-day wear, our casual shoes give you the freedom to walk comfortably, wherever you go.</p>
-                <button class="btn btn-success fw-bold shadow">SHOP NOW</button>
+                <a class="btn btn btn-success fw-bold shadow" style="margin:7px" href="collection.php">SHOP NOW</a><br>
             </div>
           </div>
 
@@ -96,7 +66,7 @@
             <div class="carousel-caption">
                 <p class="display-3 fw-bold">Your Everyday Adventure</p>
                 <p class="lead">Versatile sneakers for every journey comfort and durability all day long.</p>
-                <button class="btn btn btn-success fw-bold shadow">SHOP NOW</button>
+                <a class="btn btn btn-success fw-bold shadow" href="collection.php">SHOP NOW</a>
             </div>
           </div>
 
@@ -117,125 +87,61 @@
     <!--? Popular Product -->
     <div class="container">
         <!-- ? title -->
-        <h2 class="pb-2 border-bottom pt-5 text-uppercase">Our Popular Product</h2>
+        <h2 id="product" class="pb-2 border-bottom pt-5 text-uppercase">Our Popular Product</h2>
         <div class="row pt-5 g-2 g-md-3">
-            
-            <div class="col-sm-12 col-md-3 col-lg-3">
-                <div class="card shadow h-100 card-product-hover" style="width: 18rem; border: none;">
-                    <div class="position-absolute top-0 start-0 badge bg-success text-white p-2" style="font-size: 0.8rem; border-radius: 0;">
-                        NEW
-                    </div>
-                    <img src="picture/NIKE COCO.png" class="card-img-top" alt="Nike Dunk Low Cacao">
-                    <div class="card-body text-center">
-                        <h5 class="card-title fw-bold">Nike Dunk Low Cacao</h5>
-                        <p class="card-text text-muted">Limited Edition Sneakers for everyday style.</p>
-                        <div class="d-flex justify-content-center align-items-center mt-3">
-                            <span class="star fas fa-star text-warning"></span>
-                            <span class="star fas fa-star text-warning"></span>
-                            <span class="star fas fa-star text-warning"></span>
-                            <span class="star fas fa-star text-warning"></span>
-                            <span class="star fas fa-star text-warning"></span>
-                            <span class="badge rounded-pill bg-light text-dark px-3 py-2 shadow-sm" style="font-size: 0.7rem;">4.8</span>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center mt-4">
-                            <h5 class="mt-2">
-                                <strong>3,700 ฿</strong>
-                            </h5>
-                            <a class="btn btn-sm btn-outline-success" href="#">
-                                Shop Now
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>            
-            
-            <div class="col-sm-12 col-md-3 col-lg-3">
-                <div class="card shadow h-100 card-product-hover" style="width: 18rem; border: none;">
-                    <div class="position-absolute top-0 start-0 badge bg-danger text-white p-2" style="font-size: 0.8rem; border-radius: 0;">
-                        SALE -10%
-                    </div>
-                    <img src="picture/NIKE-RUN.png" class="card-img-top" alt="Nike Dunk Low Cacao">
-                    <div class="card-body text-center">
-                        <h5 class="card-title fw-bold">Nike Zoom Vomero 5</h5>
-                        <p class="card-text text-muted">Designed for performance with a sleek look.</p>
-                        <div class="d-flex justify-content-center align-items-center mt-3">
-                            <span class="star fas fa-star text-warning"></span>
-                            <span class="star fas fa-star text-warning"></span>
-                            <span class="star fas fa-star text-warning"></span>
-                            <span class="star fas fa-star text-warning"></span>
-                            <span class="star fas fa-star-half-alt text-warning"></span>
-                            <span class="badge rounded-pill bg-light text-dark px-3 py-2 shadow-sm" style="font-size: 0.7rem;">4.5</span>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center mt-4">
-                            <h5 class="mt-2">
-                                <s>6,000 ฿</s><strong class="ms-2 text-danger">5,400 ฿</strong>
-                            </h5>
-                            <a class="btn btn-sm btn-outline-success" href="#">
-                                Shop Now
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-sm-12 col-md-3 col-lg-3">
-                <div class="card shadow h-100 card-product-hover" style="width: 18rem; border: none;">
-                    <div class="position-absolute top-0 start-0 badge bg-success text-white p-2" style="font-size: 0.8rem; border-radius: 0;">
-                        NEW
-                    </div>
-                    <img src="picture/SAMBA.png" class="card-img-top" alt="Nike Dunk Low Cacao">
-                    <div class="card-body text-center">
-                        <h5 class="card-title fw-bold">Adidas Samba OG</h5>
-                        <p class="card-text text-muted">Retro charm meets modern versatility.</p>
-                        <div class="d-flex justify-content-center align-items-center mt-3">
-                            <span class="star fas fa-star text-warning"></span>
-                            <span class="star fas fa-star text-warning"></span>
-                            <span class="star fas fa-star text-warning"></span>
-                            <span class="star fas fa-star text-warning"></span>
-                            <span class="star fas fa-star text-warning"></span>
-                            <span class="badge rounded-pill bg-light text-dark px-3 py-2 shadow-sm" style="font-size: 0.7rem;">4.9</span>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center mt-4">
-                            <h5 class="mt-2">
-                                <strong>3,800 ฿</strong>
-                            </h5>
-                            <a class="btn btn-sm btn-outline-success" href="#">
-                                Shop Now
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <?php 
 
-            <div class="col-sm-12 col-md-3 col-lg-3">
-                <div class="card shadow h-100 card-product-hover" style="width: 18rem; border: none;">
-                    <div class="position-absolute top-0 start-0 badge bg-danger text-white p-2" style="font-size: 0.8rem; border-radius: 0;">
-                        SALE -20%
-                    </div>
-                    <img src="picture/Asics.png" class="card-img-top" alt="Nike Dunk Low Cacao">
-                    <div class="card-body text-center">
-                        <h5 class="card-title fw-bold">Asics GEL-1130</h5>
-                        <p class="card-text text-muted">Performance-driven design for ultimate support.</p>
-                        <div class="d-flex justify-content-center align-items-center mt-3">
-                            <span class="star fas fa-star text-warning"></span>
-                            <span class="star fas fa-star text-warning"></span>
-                            <span class="star fas fa-star text-warning"></span>
-                            <span class="star fas fa-star text-warning"></span>
-                            <span class="star fas fa-star text-warning"></span>
-                            <span class="badge rounded-pill bg-light text-dark px-3 py-2 shadow-sm" style="font-size: 0.7rem;">4.7</span>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center mt-4">
-                            <h5 class="mt-2">
-                                <s>4,200 ฿</s><strong class="ms-2 text-danger">3,360 ฿</strong>
-                            </h5>
-                            <a class="btn btn-sm btn-outline-success" href="#">
-                                Shop Now
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            $stmt = $conn->prepare("SELECT * FROM products ORDER BY rating DESC LIMIT 4"); 
+            $stmt->execute();
+            $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+            foreach ($row as $data) {
+                $image = $conn->prepare("SELECT file_name FROM images WHERE product_id=:id");
+                $image->bindParam(':id', $data['ProductID']);
+                $image->execute();
+    
+                $images = $image->fetchAll(PDO::FETCH_ASSOC);
+                $discount = $data['Price'] * (100 - $data['Discount'])/100;
+                
+                echo '<div class="col-sm-12 col-md-3 col-lg-3">';
+                echo '<div class="card shadow h-100 card-product-hover" style="width: 18rem; border: none;">';
+                
+                if ($data['Discount'] !== 0) {
+                    echo '<div class="position-absolute top-0 start-0 badge bg-danger text-white p-2" style="font-size: 0.8rem; border-radius: 0;">SALE -'.$data['Discount'].'%</div>';
+                }
+                
+                echo '<img src="picture/'.$images[0]['file_name'].'" class="card-img-top" alt="Nike Dunk Low Cacao">';
+                echo '<div class="card-body text-center">';
+                echo '<h5 class="card-title fw-bold">'.$data['ProductName'].'</h5>';
+                echo '<p class="card-text text-muted text-truncate">'.$data['ProductDescription'].'</p>';
+                echo '<div class="d-flex justify-content-center align-items-center mt-3">';
+                $alt_star = $data['rating'] - 5;
+                // echo $alt_star;
+                for ($i = 0; $i < $data['rating']; $i++) {
+                    echo '<span class="star fas fa-star text-warning"></span>';
+                }
+                for ($i = 0; $i > $alt_star; $i--) {
+                    echo '<span class="star far fa-star text-warning"></span>';
+                }
+                // echo '<span class="star far fa-star text-warning"></span>';
+                // echo '<span class="badge rounded-pill bg-light text-dark px-3 py-2 shadow-sm" style="font-size: 0.7rem;">'.$data['rating'].'</span>';
+                echo '</div>';
+                echo '<div class="d-flex justify-content-between align-items-center mt-4">';
+                echo '<h5 class="mt-2">';
+                if ($data['Discount'] !== 0) {
+                    echo '<s>'.number_format($data['Price']).' ฿</s><strong class="ms-2 text-danger">'.number_format($discount).' ฿</strong>';
+                } else {
+                    echo '<strong class="ms-2">'.number_format($data['Price']).' ฿</strong>';
+                }
+                echo '</h5>';
+                echo '<a class="btn btn-sm btn-outline-success" href="product.php?id='.$data['ProductID'].'">Shop Now</a>';
+                echo '</div>';
+                echo '</div>';
+                echo '</div>';
+                echo '</div>';
+            }
+        ?>
         </div>
     </div>
 
@@ -350,7 +256,7 @@
                         <p class="card-text flex-grow-1 fst-italic text-muted">The delivery was super quick, and the quality of the shoes is unbeatable. They fit perfectly and are incredibly comfortable for my daily runs. I’m definitely ordering again!</p>
                         
                         <div class="card-footer d-flex align-items-center mt-3">
-                            <img src="/profille customer/profile-2.jpg" 
+                            <img src="profille customer/profile-2.jpg"
                                 class="rounded-circle me-3 img-fluid shadow" 
                                 alt="Linda M." 
                                 style="max-width: 80px; height: 80px; object-fit: cover;">
@@ -407,10 +313,10 @@
 
     
 
-
+    <!--footer-->
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <p class="col-md-4 mb-0 text-body-secondary">© 2024 Company, Inc</p>
+          <p class="col-md-4 mb-0 text-body-secondary">© 2024 Flow Feet, Inc</p>
       
           <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
             <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>

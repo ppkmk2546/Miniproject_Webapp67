@@ -1,0 +1,4 @@
+แก้ path รูปภาพ
+แก้ path page 
+แก้ Link หน้า Login Signup ที่ชี้เชิญ
+แก้ back to main Login Signup 
